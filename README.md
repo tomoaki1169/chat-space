@@ -14,10 +14,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|name|string|null: false|
 
 ### Association
-- belongs_to :user
+- has_many :users
 - has_many: comments
 
 ## usersテーブル
@@ -27,12 +27,13 @@
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :groups
+- has_many :groups,through:groups_users
 - has_many :comments
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|text|text|null: false|
 |text|text|null: false|
 |user_id|integer|null: false,foreign_key: true|
 |group_id|integer|null:false,foreign_key:true|
