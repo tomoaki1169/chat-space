@@ -29,12 +29,13 @@
 ### Association
 - has_many :groups,through:groups_users
 - has_many :comments
+- has_many :groups_users
 
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
-|text|text|null: false|
+|image|text|
 |user_id|integer|null: false,foreign_key: true|
 |group_id|integer|null:false,foreign_key:true|
 
