@@ -10,7 +10,7 @@
 - belongs_to :group
 - belongs_to :user
 
-## groupテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -18,7 +18,7 @@
 
 ### Association
 - belongs_to :user
--
+- has_many: comments
 
 ## usersテーブル
 |Column|Type|Options|
@@ -27,7 +27,7 @@
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :group
+- has_many :groups
 - has_many :comments
 
 ## commentsテーブル
