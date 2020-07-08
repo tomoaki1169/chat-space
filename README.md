@@ -14,7 +14,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false ,unique|
 
 ### Association
 - has_many :users,through:groups_users
@@ -30,7 +30,7 @@
 ### Association
 - has_many :groups,through:groups_users
 - has_many :comments
-
+- has_many :groups_users
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
