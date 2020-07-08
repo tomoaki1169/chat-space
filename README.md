@@ -29,7 +29,6 @@
 ### Association
 - has_many :groups,through:groups_users
 - has_many :comments
-- has_many :groups_users
 
 ## commentsテーブル
 |Column|Type|Options|
