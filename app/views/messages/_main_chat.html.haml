@@ -1,0 +1,24 @@
+.Chat-main
+  .group-info
+    .g__box
+      .name test
+      .list Member : Masa
+    .edit Edit
+  .message-list
+
+
+  .message-form
+    .form
+
+      .form-contents
+
+        %input.inputContent{name:"type",placeholder:"type a message ",type: "message",value:""}/
+
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file" ,class:"inputImage"}
+
+      %input.submit{name:"comit",placeholder:"送信",type: "submit",value:"Send"}/
+
+
+
