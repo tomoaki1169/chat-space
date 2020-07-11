@@ -12,13 +12,13 @@
 
       .form-contents
 
-        %input.inputContent{:name => "type",:placeholder=>"type a message ",:type => "message",:value=>""}/
+        %input.inputContent{name:"type",placeholder:"type a message ",type: "message",value:""}/
 
         %label{class: "input-box__image"}
           = icon('fas', 'image')
           %input{type: "file" ,class:"inputImage"}
 
-      %input.submit{:name => "comit",:placeholder=>"送信",:type => "submit",:value=>"Send"}/
+      %input.submit{name:"comit",placeholder:"送信",type: "submit",value:"Send"}/
 
 
 
