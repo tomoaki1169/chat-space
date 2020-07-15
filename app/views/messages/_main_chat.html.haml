@@ -1,23 +1,24 @@
 .Chat-main
   .group-info
     .g__box
-      .name 
-        = @group.name
-      .list 
-        - @group.users.each do |user|
-          = user.name
-    = link_to edit_group_path(@group),class:"Edit" do
-      Edit
+      .name test
+      .list Member : Masa
+    .edit Edit
+  .message-list
 
-  .MessageField
-    = render @messages
 
   .message-form
-    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+    .form
+
       .form-contents
-        = f.text_field :content, class: 'inputContent', placeholder: 'type a message'
-        = f.label :image, class: 'input-box__image' do
-          = icon('far', 'image', class: 'form__icon')
+
+        %input.inputContent{name:"type",placeholder:"type a message ",type: "message",value:""}/
+
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
           %input{type: "file" ,class:"inputImage"}
-          = f.file_field :image, class: 'Hidden'
-      = f.submit 'Send', class: 'submit'
+
+      %input.submit{name:"comit",placeholder:"送信",type: "submit",value:"Send"}/
+
+
+
