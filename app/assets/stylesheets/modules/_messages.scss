@@ -52,6 +52,7 @@
     width:300px;
     color: #ffffff;
     padding: 0 20px;
+    overflow: scroll;
 
     a{
       text-decoration: none;
@@ -121,7 +122,7 @@
     box-sizing: border-box;
     padding: 35px 40px 0;
     height: calc( 100vh - 100px - 90px);
-    overflow: scloll;
+    overflow: scroll;
   }
 
   .MessageBox {
